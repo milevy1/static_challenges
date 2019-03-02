@@ -17,5 +17,35 @@ header {
   font-size: 16px;
   color: white;
   background-color: green;
-  padding: 27px;
+  padding: 25px;
+  cursor: pointer;
+}
+
+#login:hover {
+  background-color: #7CCD7C;
+}
+
+.btn-group button {
+  background-color: #00003b;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #000080;
 }
